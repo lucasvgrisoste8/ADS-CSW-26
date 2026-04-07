@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - 4</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+        <h2>Negreto / Destaque</h2>
+            <h3>Na frase temos uma <b>parte em negrito</b> usando a tag <b>B</b></h3>
+            <h3>Na frase temos uma <strong>parte do texto em negrito</strong> usando a tag <strong>strong</strong></h3>
+        <h2>Itálico / Ênfase</h2>
+            <h3>Nesta frase vamos entrar com uma palafra em <i>Itálico</i> usando tag <i>i</i></h3>
+            <h3>Nesta frase vamos entrar com uma palavra em <em>Itálico</em> usando a tag <em>EM</em></h3>
+        <h2>Texto Marcador</h2>
+            <h3>Aqui vamos usar um texto com destaque <mark style="background-color: green;">de marcador de texto</mark> usando mark </h3>
+            <h3>Aqui vamos usar um texto com destaque <mark style="background-color: yellow;">de marcador de texto</mark> usando mark</h3>
+        <h2>Texto grande e pequeno</h2>
+            <h3>Estamos trabalhando aqui com um <big>Texto grande</big> e um texto <small>pequeno</small> nesta frase</h3>
+        <h2>Texto deletado</h2>
+            <h3>Neste texto vamos trabalhar com um texto <del>que foi excluido</del> da frase</h3>
+        <h2>Texto inserido</h2>
+            <h3>Nesta frase vamos demonstra como <ins>destaca um texto inserido</ins> na frase de forma semantica</h3>
+            <h3>Nesta frase vamos demonstra como <u>destaca um texto inserido</u> na frase de forma não semantica</h3>
+        <h2>Texto sobrescrito</h2>
+            <h3>Vamos demonstra uma forma da equação do segundo grau ax <sup>2</sup> + bx + c = 0 usando tag sup</h3>
+        <h2>Texto subescrito</h2>
+            <h3>Vamos demonstra o texto subescrito com a formula da água H <sub>2</sub>o</h3>
+        <h2>Trecho de codigo fonte</h2>
+            <h3>Neste exemplo vou demonstrar um trecho de código</h3>
+
+            <code>document.getElementById('edtCodigo')</code>
+            <pre>
+                <code>import math
+
+print("Calculadora de Equação do Segundo Grau (ax² + bx + c = 0)")
+
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+c = float(input("Digite o valor de c: "))
+
+# Calculando o delta
+delta = b**2 - 4*a*c
+
+print(f"Delta = {delta}")
+
+if delta < 0:
+    print("A equação não possui raízes reais.")
+elif delta == 0:
+    x = -b / (2*a)
+    print(f"A equação possui uma raiz real: x = {x}")
+else:
+    x1 = (-b + math.sqrt(delta)) / (2*a)
+    x2 = (-b - math.sqrt(delta)) / (2*a)
+    print(f"As raízes são:")
+    print(f"x1 = {x1}")
+    print(f"x2 = {x2}")</code>
+            </pre>
+            
+</body>
+</html>
